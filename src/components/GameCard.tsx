@@ -13,8 +13,8 @@ const GameCard = ({ game }: Props) => {
   return (
     <Card borderRadius={5} overflow='hidden'>
       <div className='cropImg'>
-        <Image src={croppedImgUrl(game.background_image)} />
-        {/* <Image src='https://placehold.co/600x420' /> */}
+        {/* <Image src={croppedImgUrl(game.background_image)} /> */}
+        <Image src='https://placehold.co/600x400' />
       </div>
       <CardBody>
         <Heading fontSize='2xl'>{game.name}</Heading>
