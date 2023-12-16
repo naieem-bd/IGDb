@@ -46,11 +46,11 @@ const GameGrid = ({ gameQuery }: Props) => {
           ))}
         </SimpleGrid>
       </InfiniteScroll>
-      {hasNextPage && (
+      {/* {hasNextPage && (
         <Button marginTop={5} onClick={() => fetchNextPage()}>
           {isFetchingNextPage ? "Loading..." : "Load More"}
         </Button>
-      )}
+      )} */}
     </>
   );
 };
