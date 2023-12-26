@@ -27,7 +27,8 @@ class APIClient<T> {
       .then((res) => res.data);
   };
 
-  get = (id: number | string) => {
+  // Fetches a specific item by its ID from the API.
+  fetchById = (id: number | string) => {
     return axiosInstance
       .get<T>(this.endpoint + '/' + id)
       .then((res) => res.data);
