@@ -7,7 +7,7 @@ const useScreenshots = (gameId: number) => {
 
   return useQuery({
     queryKey: ['screenshots', gameId],
-    queryFn: apiClient.getAll,
+    queryFn: apiClient.fetchList,
   });
 };
 
