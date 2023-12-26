@@ -21,7 +21,7 @@ class APIClient<T> {
   }
 
   // Fetches a list of items from the API.
-  fetchList = (config: AxiosRequestConfig) => {
+  fetchAll = (config: AxiosRequestConfig) => {
     return axiosInstance
       .get<FetchResponse<T>>(this.endpoint, config)
       .then((res) => res.data);
