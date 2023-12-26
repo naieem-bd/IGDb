@@ -1,13 +1,13 @@
 import { useQuery } from '@tanstack/react-query';
-import APIClient from '../services/api-client';
+import DataFetcher from '../services/data-fetcher';
 import { Game } from '../entities/Game';
 
-const apiClient = new APIClient<Game>('/games');
+const dataFetcher = new DataFetcher<Game>('/games');
 
 const useGame = (slug: string) =>
   useQuery({
     queryKey: ['games', slug],
-    queryFn: () => apiClient.fetchById(slug),
+    queryFn: () => dataFetcher.fetchById(slug),
   });
 
 export default useGame;

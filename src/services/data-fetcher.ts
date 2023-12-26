@@ -13,7 +13,7 @@ const axiosInstance = axios.create({
   },
 });
 
-class APIClient<T> {
+class DataFetcher<T> {
   endpoint: string;
 
   constructor(endpoint: string) {
@@ -35,4 +35,4 @@ class APIClient<T> {
   };
 }
 
-export default APIClient;
+export default DataFetcher;
