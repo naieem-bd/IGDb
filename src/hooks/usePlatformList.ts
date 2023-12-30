@@ -5,7 +5,7 @@ import { Platform } from '../entities/Platform';
 
 const dataFetcher = new DataFetcher<Platform>('/platforms/lists/parents');
 
-const usePlatforms = () =>
+const usePlatformList = () =>
   useQuery({
     queryKey: ['platforms'],
     queryFn: dataFetcher.fetchAll,
@@ -13,4 +13,4 @@ const usePlatforms = () =>
     initialData: platforms,
   });
 
-export default usePlatforms;
+export default usePlatformList;

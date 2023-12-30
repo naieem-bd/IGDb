@@ -1,10 +1,8 @@
-import usePlatforms from "./usePlatforms";
+import usePlatformList from './usePlatformList';
 
 const usePlatformName = (id?: number) => {
-  const { data: platforms } = usePlatforms();
-  return platforms?.results.find(
-    (p) => p.id === id
-  );
-}
+  const { data: platforms } = usePlatformList();
+  return platforms?.results.find((p) => p.id === id);
+};
 
-export default usePlatformName
+export default usePlatformName;
