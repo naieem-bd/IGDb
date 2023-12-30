@@ -5,7 +5,7 @@ import { Genre } from '../entities/Genre';
 
 const dataFetcher = new DataFetcher<Genre>('/genres');
 
-const useGenres = () =>
+const useGenreList = () =>
   useQuery({
     queryKey: ['genres'],
     queryFn: dataFetcher.fetchAll,
@@ -13,4 +13,4 @@ const useGenres = () =>
     initialData: genres,
   });
 
-export default useGenres;
+export default useGenreList;

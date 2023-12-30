@@ -1,8 +1,8 @@
-import useGenres from "./useGenres";
+import useGenreList from './useGenreList';
 
 const useGenreName = (id?: number) => {
-  const { data: genres } = useGenres();
+  const { data: genres } = useGenreList();
   return genres?.results.find((g) => g.id === id);
-}
+};
 
-export default useGenreName
+export default useGenreName;
