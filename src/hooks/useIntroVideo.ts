@@ -2,7 +2,7 @@ import { useQuery } from '@tanstack/react-query';
 import DataFetcher from '../services/data-fetcher';
 import { Trailer } from '../entities/Trailer';
 
-const useTrailers = (gameId: number) => {
+const useIntroVideo = (gameId: number) => {
   const dataFetcher = new DataFetcher<Trailer>(`/games/${gameId}/movies`);
 
   return useQuery({
@@ -11,4 +11,4 @@ const useTrailers = (gameId: number) => {
   });
 };
 
-export default useTrailers;
+export default useIntroVideo;

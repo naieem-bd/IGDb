@@ -1,12 +1,11 @@
-import React from 'react';
-import useTrailers from '../hooks/useTrailers';
+import useIntroVideo from '../hooks/useIntroVideo';
 
 interface Props {
   gameId: number;
 }
 
-const GameTrailer = ({ gameId }: Props) => {
-  const { data, error, isLoading } = useTrailers(gameId);
+const GameIntroVideo = ({ gameId }: Props) => {
+  const { data, error, isLoading } = useIntroVideo(gameId);
 
   if (isLoading) return null;
 
@@ -20,4 +19,4 @@ const GameTrailer = ({ gameId }: Props) => {
   );
 };
 
-export default GameTrailer;
+export default GameIntroVideo;

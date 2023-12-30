@@ -2,7 +2,7 @@ import { useQuery } from '@tanstack/react-query';
 import DataFetcher from '../services/data-fetcher';
 import { Screenshot } from '../entities/Screenshot';
 
-const useScreenshots = (gameId: number) => {
+const useScreenshotList = (gameId: number) => {
   const dataFetcher = new DataFetcher<Screenshot>(
     `/games/${gameId}/screenshots`
   );
@@ -13,4 +13,4 @@ const useScreenshots = (gameId: number) => {
   });
 };
 
-export default useScreenshots;
+export default useScreenshotList;
