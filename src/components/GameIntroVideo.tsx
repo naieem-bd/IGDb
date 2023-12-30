@@ -11,12 +11,12 @@ const GameIntroVideo = ({ gameId }: Props) => {
 
   if (error) throw error;
 
-  return (
-    <video
-      src={data?.results[0]?.data[480]}
-      poster={data?.results[0]?.preview}
-      controls></video>
-  );
+  const videoSource = data?.results[0]?.data?.[480];
+  const videoThumb = data?.results[0]?.preview;
+
+  if (!videoSource) return null;
+
+  return <video src={videoSource} poster={videoThumb} controls></video>;
 };
 
 export default GameIntroVideo;
