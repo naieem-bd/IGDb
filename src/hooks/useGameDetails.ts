@@ -4,10 +4,10 @@ import { Game } from '../entities/Game';
 
 const dataFetcher = new DataFetcher<Game>('/games');
 
-const useGame = (slug: string) =>
+const useGameDetails = (slug: string) =>
   useQuery({
     queryKey: ['games', slug],
     queryFn: () => dataFetcher.fetchById(slug),
   });
 
-export default useGame;
+export default useGameDetails;

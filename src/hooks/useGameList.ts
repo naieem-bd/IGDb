@@ -5,7 +5,7 @@ import { Game } from '../entities/Game';
 
 const dataFetcher = new DataFetcher<Game>('/games');
 
-const useGames = () => {
+const useGameList = () => {
   const gameQuery = useGameQueryStore((s) => s.gameQuery);
 
   return useInfiniteQuery<FetchResponse<Game>, Error>({
@@ -27,4 +27,4 @@ const useGames = () => {
   });
 };
 
-export default useGames;
+export default useGameList;
