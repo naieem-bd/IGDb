@@ -1,18 +1,8 @@
-import React from "react";
-import { Game } from "../entities/Game";
-import {
-  Box,
-  Card,
-  CardBody,
-  HStack,
-  Heading,
-  Image,
-  Text,
-} from "@chakra-ui/react";
-import PlatformIconList from "./PlatformIconList";
-import CriticScore from "./CriticScore";
-import croppedImgUrl from "../services/img-cropping";
-import { Link } from "react-router-dom";
+import { Game } from '../entities/Game';
+import PlatformIconList from './PlatformIconList';
+import CriticScore from './CriticScore';
+import croppedImgUrl from '../services/img-cropping';
+import { Link } from 'react-router-dom';
 
 interface Props {
   game: Game;
@@ -20,30 +10,22 @@ interface Props {
 
 const GameCard = ({ game }: Props) => {
   return (
-    <Card
-      borderRadius={5}
-      overflow="hidden"
-      _hover={{
-        transform: "scale(1.03)",
-        transition: "transform .15s ease-in",
-      }}
-    >
-      <div className="cropImg">
-        <Image src={croppedImgUrl(game.background_image)} />
-        {/* <Image src='https://placehold.co/600x400' /> */}
-      </div>
-      <CardBody>
-        <Heading fontSize="2xl">
-          <Link to={"/games/" + game.slug}>{game.name}</Link>
-        </Heading>
-        <HStack justifyContent="space-between">
+    <div className='card bg-base-100 shadow-xl'>
+      <figure>
+        <img src={croppedImgUrl(game.background_image)} alt='Shoes' />
+      </figure>
+      <div className='card-body'>
+        <h1 className='text-xl font-bold'>
+          <Link to={'/games/' + game.slug}>{game.name}</Link>
+        </h1>
+        <div className='flex justify-between'>
           <PlatformIconList
             platforms={game.parent_platforms.map((item) => item.platform)}
           />
           <CriticScore score={game.metacritic} />
-        </HStack>
-      </CardBody>
-    </Card>
+        </div>
+      </div>
+    </div>
   );
 };
 
