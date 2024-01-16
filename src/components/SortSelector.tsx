@@ -26,7 +26,7 @@ const SortSelector = () => {
 
   return (
     <select
-      className='select select-bordered select-sm w-full max-w-xs'
+      className='select select-bordered select-sm max-w-52'
       onChange={(e) => setSortOrder(e.target.value)}>
       <option selected>Order by (Relevance)</option>
       {sortOrders.map((item) => (
