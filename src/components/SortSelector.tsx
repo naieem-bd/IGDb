@@ -25,16 +25,18 @@ const SortSelector = () => {
   const currentSortOrder = sortOrders.find((item) => item.value === sortOrder);
 
   return (
-    <select
-      className='select select-bordered select-sm max-w-52'
-      onChange={(e) => setSortOrder(e.target.value)}>
-      <option>Order by (Relevance)</option>
-      {sortOrders.map((item) => (
-        <option key={item.value} value={item.value}>
-          {item.label}
-        </option>
-      ))}
-    </select>
+    <>
+      <label>Order By</label>
+      <select
+        className='select select-bordered select-sm max-w-52'
+        onChange={(e) => setSortOrder(e.target.value)}>
+        {sortOrders.map((item) => (
+          <option key={item.value} value={item.value}>
+            {item.label}
+          </option>
+        ))}
+      </select>
+    </>
   );
 };
 
