@@ -23,7 +23,7 @@ const PlatformSelector = () => {
     <select
       className='select select-bordered select-sm max-w-52'
       onChange={(e) => setPlatformId(parseInt(e.target.value))}>
-      <option selected>Platforms</option>
+      <option>Platforms</option>
       {data?.results.map((item) => (
         <option key={item.id} value={item.id}>
           {item.name}

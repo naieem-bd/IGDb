@@ -1,20 +1,9 @@
-import { Badge } from '@chakra-ui/react';
-
 interface Props {
   score: number;
 }
 
 const CriticScore = ({ score }: Props) => {
-  let color = score > 75 ? 'green' : score > 60 ? 'yellow' : '';
-  return (
-    <Badge
-      colorScheme={color}
-      fontSize='14px'
-      paddingX='7px'
-      borderRadius='5px'>
-      {score}
-    </Badge>
-  );
+  return <div className='badge badge-primary'>{score ? score : 0}</div>;
 };
 
 export default CriticScore;
