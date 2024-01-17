@@ -1,12 +1,3 @@
-import {
-  Box,
-  Button,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuList,
-} from '@chakra-ui/react';
-import { BsChevronBarDown } from 'react-icons/bs';
 import useGameQueryStore from '../store';
 
 const SortSelector = () => {
@@ -18,11 +9,8 @@ const SortSelector = () => {
     { value: '-metacritic', label: 'Popularity' },
     { value: '-rating', label: 'Average rating' },
   ];
-
   const setSortOrder = useGameQueryStore((s) => s.setSortOrder);
   const sortOrder = useGameQueryStore((s) => s.gameQuery.sortOrder);
-
-  const currentSortOrder = sortOrders.find((item) => item.value === sortOrder);
 
   return (
     <>
