@@ -1,4 +1,3 @@
-import { Box, Heading } from '@chakra-ui/react';
 import React, { ReactNode } from 'react';
 
 interface Props {
@@ -8,12 +7,10 @@ interface Props {
 
 const DefinitionItem = ({ term, children }: Props) => {
   return (
-    <Box marginY={5}>
-      <Heading as='dt' fontSize='md' color='gray.600'>
-        {term}
-      </Heading>
+    <div className='my'>
+      <dt className='text-lg font-bold text-gray-600'>{term}</dt>
       <dd>{children}</dd>
-    </Box>
+    </div>
   );
 };
 
