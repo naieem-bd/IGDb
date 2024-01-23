@@ -1,11 +1,3 @@
-import {
-  Button,
-  HStack,
-  Image,
-  List,
-  ListItem,
-  Spinner,
-} from '@chakra-ui/react';
 import useGenreList from '../hooks/useGenreList';
 import croppedImgUrl from '../services/img-cropping';
 import useGameQueryStore from '../store';
@@ -17,29 +9,27 @@ const GenreList = () => {
 
   if (error) return null;
 
-  if (isLoading) return <Spinner />;
+  if (isLoading)
+    return (
+      <span className='loading loading-spinner text-warning loading-lg'></span>
+    );
 
   return (
-    <List>
+    <ul>
       {data?.results.map((genre) => (
-        <ListItem key={genre.id} paddingY='5px'>
-          <HStack>
-            <Image
-              boxSize='30px'
-              borderRadius={5}
+        <li key={genre.id} className='py-1'>
+          <div className='flex'>
+            <img
+              className='w-7 mr-2'
               src={croppedImgUrl(genre.image_background)}
             />
-            <Button
-              fontSize='lg'
-              fontWeight={genre.id === genreId ? 'bold' : 'normal'}
-              variant='link'
-              onClick={() => setGenreId(genre.id)}>
+            <button className='' onClick={() => setGenreId(genre.id)}>
               {genre.name}
-            </Button>
-          </HStack>
-        </ListItem>
+            </button>
+          </div>
+        </li>
       ))}
-    </List>
+    </ul>
   );
 };
 
