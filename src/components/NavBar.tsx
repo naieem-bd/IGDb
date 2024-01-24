@@ -4,12 +4,18 @@ import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <div className='flex justify-between'>
-      <Link to='/'>
-        <img src={logo} />
-      </Link>
-      <SearchInput />
-    </div>
+    <>
+      <div className='navbar bg-base-200'>
+        <div className='flex-1'>
+          <Link to='/'>
+            <img src={logo} />
+          </Link>
+        </div>
+        <div className='flex-none gap-2'>
+          <SearchInput />
+        </div>
+      </div>
+    </>
   );
 };
 
