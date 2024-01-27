@@ -5,10 +5,13 @@ import { Link } from 'react-router-dom';
 const NavBar = () => {
   return (
     <>
-      <div className='navbar bg-base-200'>
+      <div className='app-navbar navbar bg-base-200'>
         <div className='flex-1'>
           <Link to='/'>
-            <img src={logo} />
+            <div className='flex items-center'>
+              <img src={logo} className='mr-4' />
+              <h1 className='text-3xl font-bold'>Internet Game Database</h1>
+            </div>
           </Link>
         </div>
         <div className='flex-none gap-2'>
