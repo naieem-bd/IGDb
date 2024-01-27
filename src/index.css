@@ -20,7 +20,11 @@ body{
 
 .app-navbar {
   background-color: #38414A;
+  height: 64px;
 }
 .app-logo{
   color: #fff;
+}
+.app-logo img {
+  height: 34px;
 }
