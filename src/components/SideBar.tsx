@@ -23,21 +23,22 @@ const SideBar = () => {
   };
 
   return (
-    <ul className='app-sidebar px-3'>
-      {data?.results.map((genre) => (
-        <li key={genre.id} className='py-1'>
-          <div className='flex'>
+    <>
+      <ul className='app-sidebar px-3'>
+        {data?.results.map((genre) => (
+          <li
+            key={genre.id}
+            className='flex py-1'
+            onClick={() => handleButtonClick(genre.id)}>
             <img
               className='w-7 mr-2'
               src={croppedImgUrl(genre.image_background)}
             />
-            <button className='' onClick={() => handleButtonClick(genre.id)}>
-              {genre.name}
-            </button>
-          </div>
-        </li>
-      ))}
-    </ul>
+            <p>{genre.name}</p>
+          </li>
+        ))}
+      </ul>
+    </>
   );
 };
 
