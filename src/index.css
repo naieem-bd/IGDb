@@ -21,10 +21,21 @@ body{
 .app-navbar {
   background-color: #38414A;
   height: 64px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 .app-logo{
   color: #fff;
 }
 .app-logo img {
   height: 34px;
+}
+
+.app-sidebar {
+  background-color: #484B52;
+  height: calc(100vh - 64px);
+  position: sticky;
+  top: 64px;
+  z-index: 998;
 }

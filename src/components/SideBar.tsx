@@ -23,7 +23,7 @@ const SideBar = () => {
   };
 
   return (
-    <ul className='app-sidebar'>
+    <ul className='app-sidebar px-3'>
       {data?.results.map((genre) => (
         <li key={genre.id} className='py-1'>
           <div className='flex'>

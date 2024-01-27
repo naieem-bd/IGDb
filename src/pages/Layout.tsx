@@ -6,11 +6,11 @@ const Layout = () => {
   return (
     <>
       <NavBar />
-      <div className='grid gap-10 content-area'>
+      <div className='grid gap-3 content-area'>
         <div className='nav-bar'>
           <SideBar />
         </div>
-        <div className='main-content'>
+        <div className='main-content px-3'>
           <Outlet />
         </div>
       </div>
