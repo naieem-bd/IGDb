@@ -39,3 +39,24 @@ body{
   top: 64px;
   z-index: 998;
 }
+
+
+.app-sidebar ul li {
+  border-bottom: 1px dashed #585C64;
+  cursor: pointer;
+}
+.app-sidebar ul li:hover {
+  background-color: #404349;
+}
+.app-sidebar ul li:hover p {
+  color: #fff;
+  font-weight: 600;
+}
+.app-sidebar ul li:last-child {
+  border-bottom: none;
+}
+.app-sidebar ul li img {border-radius: 3px;border: 2px solid #38414A;}
+
+.app-sidebar ul li p {
+  color: #ddd;
+}

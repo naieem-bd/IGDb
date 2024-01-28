@@ -23,12 +23,13 @@ const SideBar = () => {
   };
 
   return (
-    <>
-      <ul className='app-sidebar px-3'>
+    <div className='app-sidebar'>
+      <h2 className='text-lg text-slate-100 font-bold px-3 py-4'>Categories</h2>
+      <ul>
         {data?.results.map((genre) => (
           <li
             key={genre.id}
-            className='flex py-1'
+            className='flex px-3 py-2'
             onClick={() => handleButtonClick(genre.id)}>
             <img
               className='w-7 mr-2'
@@ -38,7 +39,7 @@ const SideBar = () => {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 };
 
