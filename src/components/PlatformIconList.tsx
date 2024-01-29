@@ -34,8 +34,8 @@ const PlatformIconList = ({ platforms }: Props) => {
       {platforms.map((platform) => {
         const IconComponent = iconMap[platform.slug];
         return (
-          <span key={platform.id}>
-            {IconComponent && <IconComponent size={24} />}
+          <span key={platform.id} className='text-stone-800'>
+            {IconComponent && <IconComponent size={16} />}
           </span>
         );
       })}

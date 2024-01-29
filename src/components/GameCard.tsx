@@ -10,12 +10,12 @@ interface Props {
 
 const GameCard = ({ game }: Props) => {
   return (
-    <div className='card bg-base-100 shadow-xl'>
+    <div className='card bg-white rounded'>
       <figure>
         <img src={croppedImgUrl(game.background_image)} alt='Shoes' />
       </figure>
-      <div className='card-body'>
-        <h1 className='text-xl font-bold'>
+      <div className='card-body p-3'>
+        <h1 className='text-lg font-bold line-clamp-1'>
           <Link to={'/games/' + game.slug}>{game.name}</Link>
         </h1>
         <div className='flex justify-between'>

@@ -3,7 +3,9 @@ interface Props {
 }
 
 const CriticScore = ({ score }: Props) => {
-  return <div className='badge badge-primary'>{score ? score : 0}</div>;
+  return (
+    <div className='badge badge-primary font-bold'>{score ? score : 0}</div>
+  );
 };
 
 export default CriticScore;
