@@ -60,3 +60,8 @@ body{
 .app-sidebar ul li p {
   color: #ddd;
 }
+
+.app-sidebar ul {
+  max-height: calc(100% - 60px);
+  overflow-y: scroll;
+}
