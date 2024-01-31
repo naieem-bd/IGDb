@@ -6,7 +6,7 @@ import SortSelector from '../components/SortSelector';
 const HomePage = () => {
   return (
     <>
-      <div className='flex items-center mt-4'>
+      <div className='flex-none md:flex items-center mt-4'>
         <div className='flex-1 mb-2'>
           <GameHeading />
         </div>
