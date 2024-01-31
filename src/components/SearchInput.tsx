@@ -17,14 +17,14 @@ const SearchInput = () => {
           navigate('/');
         }
       }}>
-      <div className='join'>
+      <div className='join custom-searchbox'>
         <input
           ref={ref}
-          className='input input-bordered join-item'
+          className='input input-bordered join-item input-sm focus:outline-none rounded'
           placeholder='Search games...'
         />
-        <button type='submit' className='btn join-item rounded-r-full'>
-          <BsSearch />
+        <button type='submit' className='btn join-item btn-sm rounded-r'>
+          <BsSearch /> Search
         </button>
       </div>
     </form>

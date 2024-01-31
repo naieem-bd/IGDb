@@ -82,4 +82,17 @@ body{
   max-height: calc(100% - 60px);
   overflow-y: scroll;
 }
+
+/* custom searchbox start */
+.custom-searchbox button {
+  background-color: #F3B605;
+  border: 1px solid #F3B605;
+  color: #fff;
+}
+.custom-searchbox button:hover {
+  background-color: #D29D04;
+  border: 1px solid #D29D04;
+}
+/* custom searchbox end */
+
 /* global custom styles end */
