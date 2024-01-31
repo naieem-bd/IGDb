@@ -6,7 +6,23 @@
 @tailwind components;
 @tailwind utilities;
 
-/* global custom styles */
+/* custom scrollbar start */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+::-webkit-scrollbar-thumb {
+  background: #2B3039; 
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1C2026; 
+}
+/* custom scrollbar end */
+
+/* global custom styles start */
 body{
   font-size: 14px;
   line-height: 20px;
@@ -14,6 +30,7 @@ body{
   background-color: #EBEDF1;
   font-family: 'Open Sans', sans-serif;
 }
+
 .content-area {
   grid-template-columns: 250px 1fr;
 }
@@ -65,3 +82,4 @@ body{
   max-height: calc(100% - 60px);
   overflow-y: scroll;
 }
+/* global custom styles end */
