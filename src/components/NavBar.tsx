@@ -1,6 +1,7 @@
 import logo from '../assets/IGDb_logo.png';
 import SearchInput from './SearchInput';
 import { Link } from 'react-router-dom';
+import SideBar from './SideBar';
 
 const NavBar = () => {
   return (
@@ -18,6 +19,36 @@ const NavBar = () => {
         </div>
         <div className='flex-none gap-2'>
           <SearchInput />
+        </div>
+      </div>
+
+      <div className='drawer'>
+        <input id='my-drawer' type='checkbox' className='drawer-toggle' />
+        <div className='drawer-content'>
+          {/* Page content here */}
+          <label htmlFor='my-drawer' className='btn btn-primary drawer-button'>
+            Open drawer
+          </label>
+        </div>
+        <div className='drawer-side'>
+          <label
+            htmlFor='my-drawer'
+            aria-label='close sidebar'
+            className='drawer-overlay'></label>
+          <ul className='menu p-4 w-80 min-h-full bg-base-200 text-base-content'>
+            {/* Sidebar content here */}
+            <li>
+              <a>
+                <label htmlFor='my-drawer'>Sidebar Item 1</label>
+              </a>
+            </li>
+            <li>
+              <a>
+                <label htmlFor='my-drawer'>Sidebar Item 2</label>
+              </a>
+            </li>
+          </ul>
+          <SideBar />
         </div>
       </div>
     </>
