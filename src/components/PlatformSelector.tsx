@@ -10,10 +10,10 @@ const PlatformSelector = () => {
 
   return (
     <>
-      <label>Platforms</label>
       <select
-        className='select select-bordered select-sm max-w-52'
+        className='select select-bordered select-sm w-40 focus:outline-none rounded'
         onChange={(e) => setPlatformId(parseInt(e.target.value))}>
+        <option value='1'>Platform List</option>
         {data?.results.map((item) => (
           <option key={item.id} value={item.id}>
             {item.name}

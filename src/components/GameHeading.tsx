@@ -10,7 +10,7 @@ const GameHeading = () => {
   const platform = usePlatformName(platformId);
 
   return (
-    <h1 className='text-3xl font-bold mb-3'>
+    <h1 className='text-2xl font-bold'>
       {platform?.name || ''} {genre?.name || ''} Game
     </h1>
   );
