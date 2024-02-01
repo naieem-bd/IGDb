@@ -80,7 +80,7 @@ body{
 
 .app-sidebar ul {
   max-height: calc(100% - 60px);
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 /* custom searchbox start */
