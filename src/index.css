@@ -62,6 +62,10 @@ body{
   border-bottom: 1px dashed #585C64;
   cursor: pointer;
 }
+
+.app-sidebar ul li label {
+  cursor: pointer;
+}
 .app-sidebar ul li:hover {
   background-color: #404349;
 }
