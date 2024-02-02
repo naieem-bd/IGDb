@@ -69,7 +69,14 @@ body{
 .app-sidebar ul li:hover {
   background-color: #404349;
 }
+.app-sidebar ul li.active {
+  background-color: #404349;
+}
 .app-sidebar ul li:hover p {
+  color: #fff;
+  font-weight: 600;
+}
+.app-sidebar ul li.active p {
   color: #fff;
   font-weight: 600;
 }
