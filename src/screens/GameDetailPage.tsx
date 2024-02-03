@@ -26,7 +26,7 @@ const GameDetailPage = () => {
               <img
                 src={game.background_image}
                 alt=""
-                className="rounded mb-3"
+                className="rounded shadow-lg mb-3"
               />
             </div>
             <div className="w-full lg:w-2/3 mb-3">
