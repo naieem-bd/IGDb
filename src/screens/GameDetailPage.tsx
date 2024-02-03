@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-import ExpandableText from "../components/ExpandableText";
 import GameAttributes from "../components/GameAttributes";
 import useGameDetails from "../hooks/useGameDetails";
 import GameScreenshots from "../components/GameScreenshots";
@@ -20,7 +19,8 @@ const GameDetailPage = () => {
   return (
     <>
       <h1 className="text-2xl font-bold mb-2 mt-4">{game.name}</h1>
-      <ExpandableText>{game.description_raw}</ExpandableText>
+      <p>{game.description_raw}</p>
+      {/* <ExpandableText>{game.description_raw}</ExpandableText> */}
       <GameAttributes game={game} />
       <GameScreenshots gameId={game.id} />
     </>
