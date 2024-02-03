@@ -5,12 +5,12 @@ import {
   FaApple,
   FaLinux,
   FaAndroid,
-} from 'react-icons/fa';
-import { MdPhoneIphone } from 'react-icons/md';
-import { SiNintendo } from 'react-icons/si';
-import { BsGlobe } from 'react-icons/bs';
-import { Platform } from '../entities/Platform';
-import { IconType } from 'react-icons';
+} from "react-icons/fa";
+import { MdPhoneIphone } from "react-icons/md";
+import { SiNintendo } from "react-icons/si";
+import { BsGlobe } from "react-icons/bs";
+import { Platform } from "../entities/Platform";
+import { IconType } from "react-icons";
 
 interface Props {
   platforms: Platform[];
@@ -30,12 +30,12 @@ const PlatformIconList = ({ platforms }: Props) => {
   };
 
   return (
-    <div className='flex gap-2'>
+    <div className="flex gap-1">
       {platforms.map((platform) => {
         const IconComponent = iconMap[platform.slug];
         return (
-          <span key={platform.id} className='text-stone-800'>
-            {IconComponent && <IconComponent size={16} />}
+          <span key={platform.id} className="text-stone-600">
+            {IconComponent && <IconComponent size={15} />}
           </span>
         );
       })}
