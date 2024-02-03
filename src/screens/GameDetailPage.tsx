@@ -18,10 +18,29 @@ const GameDetailPage = () => {
 
   return (
     <>
-      <h1 className="text-2xl font-bold mb-2 mt-4">{game.name}</h1>
-      <p>{game.description_raw}</p>
-      {/* <ExpandableText>{game.description_raw}</ExpandableText> */}
-      <GameAttributes game={game} />
+      <div className="card bg-white rounded my-6">
+        <div className="card-body">
+          <h1 className="text-2xl font-bold mb-2">{game.name}</h1>
+          <div className="flex-none lg:flex gap-6">
+            <div className="w-full lg:w-1/3">
+              <img
+                src={game.background_image}
+                alt=""
+                className="rounded mb-3"
+              />
+            </div>
+            <div className="w-full lg:w-2/3 mb-3">
+              <p>{game.description_raw}</p>
+            </div>
+          </div>
+          <hr className="mb-6 mt-3" />
+          <GameAttributes game={game} />
+        </div>
+      </div>
+
+      <h1 className="text-2xl font-bold mb-2 mt-6">
+        Screenshots from the {game.name}
+      </h1>
       <GameScreenshots gameId={game.id} />
     </>
   );

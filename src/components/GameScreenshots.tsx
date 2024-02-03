@@ -1,4 +1,4 @@
-import useScreenshotList from '../hooks/useScreenshotList';
+import useScreenshotList from "../hooks/useScreenshotList";
 
 interface Props {
   gameId: number;
@@ -12,9 +12,9 @@ const GameScreenshots = ({ gameId }: Props) => {
   if (error) throw error;
 
   return (
-    <div className='grid grid-cols-2 gap-6'>
+    <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
       {data?.results.map((file) => (
-        <img key={file.id} src={file.image} />
+        <img key={file.id} src={file.image} className="rounded shadow" />
       ))}
     </div>
   );
