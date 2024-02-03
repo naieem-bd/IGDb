@@ -1,9 +1,8 @@
-import { useParams } from 'react-router-dom';
-import ExpandableText from '../components/ExpandableText';
-import GameAttributes from '../components/GameAttributes';
-import useGameDetails from '../hooks/useGameDetails';
-import GameIntroVideo from '../components/GameIntroVideo';
-import GameScreenshots from '../components/GameScreenshots';
+import { useParams } from "react-router-dom";
+import ExpandableText from "../components/ExpandableText";
+import GameAttributes from "../components/GameAttributes";
+import useGameDetails from "../hooks/useGameDetails";
+import GameScreenshots from "../components/GameScreenshots";
 
 const GameDetailPage = () => {
   const { slug } = useParams();
@@ -11,17 +10,18 @@ const GameDetailPage = () => {
 
   if (isLoading)
     return (
-      <span className='loading loading-spinner text-warning loading-lg'></span>
+      <span className="loading loading-spinner text-warning loading-lg"></span>
     );
 
   if (error || !game) throw error;
 
+  console.log(game);
+
   return (
     <>
-      <h1 className='text-3xl font-bold mb-3'>{game.name}</h1>
+      <h1 className="text-2xl font-bold mb-2 mt-4">{game.name}</h1>
       <ExpandableText>{game.description_raw}</ExpandableText>
       <GameAttributes game={game} />
-      <GameIntroVideo gameId={game.id} />
       <GameScreenshots gameId={game.id} />
     </>
   );
