@@ -27,6 +27,7 @@ First you have to clone the repository, install the dependencies and run the app
 - Infinite Scrolling
 - Data Caching
 - Responsive Design
+- Easy state management with Zustand
 - Elegant and User-Friendly UI
 
 <!-- ## Acknowledgements
