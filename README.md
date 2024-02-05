@@ -1,48 +1,35 @@
 # IGDb | Internet Game Database
 
-<!--
-<img src="res-readme/github-cover-ShopBox-MERN.png" width="100%" />
+<!-- <img src="res-readme/github-cover-ShopBox-MERN.png" width="100%" /> -->
 
-"ShopBox" is a feature-rich MERN stack e-commerce solution with user authentication, a user-friendly interface, shopping cart, order processing, user profiles, product reviews, responsive design, and secure PayPal integration. Empower your business to thrive online effortlessly.
+IGDb (Internet Game Database) is an advanced React application designed to meet the needs of users seeking in-depth game information. Offering features such as efficient Game Search, Detailed Game Information, Filtering and Sorting capabilities, Infinite Scrolling for seamless exploration, and Data Caching for optimal performance, IGDb stands as a comprehensive gaming database. The project prides itself on an elegant and user-friendly UI, achieved through the integration of modern technologies such as React, TypeScript, TanStack Query, Zustand, Tailwind CSS, and DaisyUI. Immerse yourself in the gaming world with IGDb—an aesthetically pleasing and feature-rich platform for discovering and exploring games.
 
 Let's get started!
 
-## Installation
+## Installation and run the Application
 
-First you have to clone the repository and install the dependencies:
+First you have to clone the repository, install the dependencies and run the application.
 
 ```bash
-   git clone https://github.com/naieem-bd/ShopBox-MERN-Stack-eCommerce.git
-   cd ShopBox-MERN-Stack-eCommerce
+   git clone https://github.com/naieem-bd/IGDb.git
+   cd IGDb
    npm install
+   npm run dev
 ```
 
-## Environment
-
-After cloning the project, you need to create a **.env** file in the project directory. You can copy the **.env.example** file and rename it to **.env**.
-
-```bash
-   cp .env.example .env
-```
-
-You may change the **.env** file according to your needs. To change the **.env** file, open it with a text editor and change the values of the variables.
-
-<img src="res-readme/Home_ShopBox-MERN.jpg" width="100%" />
+<!-- <img src="res-readme/Home_ShopBox-MERN.jpg" width="100%" /> -->
 
 ## Features
 
-- User Authentication
-- Admin Control Panel
-- User-Friendly Product Listings
-- Shopping Cart
-- Order Processing
-- User Profile
-- Product Reviews and Ratings
-- Search and Filtering
+- Game Search
+- Detailed Game Information
+- Filtering and Sorting
+- Infinite Scrolling
+- Data Caching
 - Responsive Design
-- Payment Integration(PayPal)
+- Elegant and User-Friendly UI
 
-## Acknowledgements
+<!-- ## Acknowledgements
 
 - [React](https://react.dev/)
 - [Redux](https://redux.js.org/)
