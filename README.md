@@ -33,12 +33,13 @@ First you have to clone the repository, install the dependencies and run the app
 - Elegant and User-Friendly UI
 - RAWG API Integration
 
-<!-- ## Acknowledgements
+## Acknowledgements
 
 - [React](https://react.dev/)
-- [Redux](https://redux.js.org/)
-- [Node](https://nodejs.org/en)
-- [Express](https://expressjs.com/)
-- [MongoDB](https://www.mongodb.com/)
-- [Mongoose](https://mongoosejs.com/)
-- [Inspired](https://github.com/bradtraversy/proshop_mern) -->
+- [TypeScript](https://www.typescriptlang.org/)
+- [TanStack Query](https://tanstack.com/query/latest)
+- [Zustand](https://zustand-demo.pmnd.rs/)
+- [RAWG API](https://rawg.io/apidocs)
+- [React Router](https://reactrouter.com/en/main)
+- [Axios](https://axios-http.com/docs/intro)
+- [Inspired](https://github.com/mosh-hamedani/game-hub)
