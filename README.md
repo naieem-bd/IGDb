@@ -8,9 +8,6 @@ The project prides itself on an elegant and user-friendly UI, achieved through t
 
 Let's get started!
 
-<!-- test text -->
-<!-- test text -->
-
 ## Installation and run the Application
 
 First you have to clone the repository, install the dependencies and run the application.
