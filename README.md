@@ -1,6 +1,6 @@
 # IGDb | Internet Game Database
 
-<img src="IGDb_github_cover.jpg" width="100%" />
+<img src="IGDb_cover.jpg" width="100%" />
 
 IGDb (Internet Game Database) is an advanced React application designed to meet the needs of users seeking in-depth game information. Offering features such as efficient Game Search, Detailed Game Information, Filtering and Sorting capabilities, Infinite Scrolling for seamless exploration, and Data Caching for optimal performance, IGDb stands as a comprehensive gaming database.
 
